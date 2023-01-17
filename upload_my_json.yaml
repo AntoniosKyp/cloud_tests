@@ -1,0 +1,3 @@
+steps:
+- name: gcr.io/google.com/cloudsdktool/cloud-sdk
+  args: ['bq', 'load', '--autodetect', '--source_format=NEWLINE_DELIMITED_JSON','dev_antonis.test_imported_data3', 'gs://gwilearningresources/antonis_test/test_data2.json']
